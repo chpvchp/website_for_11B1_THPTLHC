@@ -17,6 +17,91 @@
     grid-area: footer;
 }
 
+
+/* ================================================================================================================ */
+/* Repostive for Screen 4K*/
+@media (max-width: 4000px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "aside-left main aside-right"
+            "footer footer footer";
+        font-size: 64px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    header {
+        background-color: aqua;
+        margin: 0px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        background-color: rgb(0, 190, 189);
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        background-color: rgb(163, 189, 255);
+        margin: 0px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        background-color: rgb(0, 184, 255);
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        background-color: rgb(88, 255, 255);
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        background-color: rgb(220, 255, 255);
+        margin: 20px;
+        padding: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        background-color: rgb(0, 140, 189);
+        margin: 0px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ================================================================================================================ */
+/* Repostive for Screen FHD*/
 @media (max-width: 2000px) {
     body {
         display: grid;
@@ -96,6 +181,9 @@
     }
 }
 
+
+/* ================================================================================================================ */
+/* Repostive for Screen Mobile */
 @media (max-width: 800px) {
     body {
         display: grid;
